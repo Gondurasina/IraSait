@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <header class="header">
+        <div class="logogroup">
+            <img src="logo.svg" class="logo">
+            <img src="Center.svg" class="logo1">
+        </div>
+        <div class = "menulinkswrapperDesk">
+            <a href="Nomination.html">Номинации</a>
+            <a href="Gallery.html">Галерея</a>
+            <a href="Archive.html">Архив</a>
+            <a href="index.html">О конкурсе</a>
+        </div>
+        <div class="burger-btn" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <nav class="mobilenav" id="mobileNav">
+        <div class="menucontentcontainer">
+            <div class="leftsection">
+                <div class="closearrow" onclick="toggleMenu()">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+                </div>
+                
+                <div class="logosstack">
+                    <img src="KraskiFull.svg" class="menulogo1">
+                    <img src="Center.svg" alt="Центр" class="menu-logo-2">
+                </div>
+            </div>
+            <hr class = "LineMobile">
+            <div class="menu-links-wrapperMobile">
+                <a href="Nomination.html">Номинации</a>
+                <a href="Gallery.html">Галерея</a>
+                <a href="Archive.html">Архив</a>
+                <a href="index.html">О конкурсе</a>
+            </div>
+        </div>
+    </nav>
+    <div class="FirstPageDesk">
+        <h1 class="ConsursText">Конкурс детского рисунка<br>Новосибирской области</h1>
+    
+        <div class="decorLeft">
+            <img src="Palette.svg" class="Palette">
+            <img src="Brush.svg" class="Brush">
+        </div>
+        <div class="decorCenter">
+            <img src="Chalk.svg" class="Chalk">
+            <img src="Line.svg" class="Line">
+        </div>
+        <div class="decorRight">
+            <img src="Window.svg" class="Window">
+            <img src="Arka.svg" class="Arka">
+        </div>
+    
+        <button class="joinBtn" target="Anketa">Принять участие</button>
+    </div>
+
+    <div class = "FirstPageMobile">
+        <h1 class = "ConsursText">Конкурс детского рисунка Новосибирской области</h1>
+        <div class="decorLeft">
+            <img src="ChalkBold.svg" class="Chalk">
+            <img src="LineBold.svg" class="Line">
+        </div>
+        <div class="decorRight">
+            <img src="Window.svg" class="Window">
+            <img src="Arka.svg" class="Arka">
+        </div>
+        <button class="joinBtn" target="Anketa">Принять участие</button>
+    </div>
+    <section class="aboutsection">
+        <div class="visualpart">
+            <img src="BackGround.svg" class="blue-shape" alt="Фон">
+            <div class="buildings">             
+                <img src="Zdaniye2.svg" class="center">
+                <img src="Zdaniye.svg" class="opera">
+                <img src="Stars.svg" class="stars">
+                <img src="StarsMobile.svg" class="starsMobile">
+                </div>
+        </div>
+        <div class="infopart">
+            <div class="infocontent">
+                <h2 class = "AboutUs">О нас</h2>
+                <p class = "Description">Конкурс детского рисунка посвящен объектам культурного наследия Новосибирской области. Мы хотим узнать, как дети и подростки видят культурное наследие Новосибирской области, и воспитать бережное отношение  к наследию у подрастающего поколения.</p>
+                <a href="https://disk.yandex.ru/d/WZQQeKKrjIoFPw" target="_blank">            
+                    <button class="doc-btn">Положение о конкурсе</button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="ParticipateSection">
+            <div class="ParticipatepPart">
+                <div class="ParticipateContent">
+                    <h2 class = "HowParticipate">Как участвовать</h2>
+                    <p class = "ParticipateDescription">Для участия в конкурсе нужно нарисовать любой объект культурного наследия (ОКН) Новосибирской области на листе формата А3 и заполнить анкету участника</p>
+                    <a href="https://disk.yandex.ru/d/yhc2kvQprpholQ" target="_blank">     
+                        <button class="Participatebtn" >Список ОКН</button>
+                    </a>
+                </div>
+            </div>
+            <div class="ZdaniyeContainer">
+                <div class="buildingsParticipate ">        
+                    <img src="NOVAT.svg" class="ParticipateNOVAT"> 
+                    <img src="Lenina11.svg" class="ParticipateLenina11">
+                    <img src="100KV.svg" class="Participate100KV">
+                </div>
+            </div>
+    </section>
+    <section class="Participant">
+        <div class = "CategoriesParticipants">
+            <h2 class="ParticipantsText">Категории уастников</h2>
+        </div>
+        <div class = "CategoriesParticipantsList">      
+            <img src="GreenCard.svg" class="GreenCard">
+            <img src="BlueCard.svg" class="BlueCard"> 
+            <img src="YellowCard.svg" class="YellowCard">
+        </div>
+        <div class = "other">
+            <img src="OrangeLine.svg" class="OrangeLine">
+            <img src="MelokOrangeк.svg" class="MelokOrange"> 
+            <img src="MelokBlue.svg" class="MelokBlue">
+            <button class="FillAnketa" id="Anketa">Заполнить Анкету</button>
+        </div>
+    </section>
+    <section class = "FAQSection">
+        <h2 class="AnswerText">Ответы на часто задаваемые вопросы</h2>
+        <div class = "FAQ">
+            <div class = "FAQItem">
+                <div class = "Question">
+                    <span class="FAQline"></span> 
+                    <p>Что такое объекты культурного наследия (ОКН)?</p>
+                </div>
+                <div class = "Answer">
+                    <p>Объекты культурного наследия (ОКН) - памятники (здания, монументы и др), возникшие в результате исторических событий, они ценны с точки зрения истории, архитектуры, искусства, науки и являются свидетельством эпох и цивилизаций, подлинными источниками информации о зарождении и развитии культуры. Все объекты культурного наследия Новосибирской области можно увидеть в Едином государственном реестре объектов культурного наследия (памятников истории и культуры) народов Российской Федерации. Подробнее о объектах культурного наследия можно узнать в презентации.</p>
+                </div>
+            </div>
+            <div class = "FAQItem">
+                <div class = "Question">
+                    <span class="FAQline"></span> 
+                    <p>Какие известные объекты культурного наследия находятся в Новосибирске?</p>
+                </div>
+                <div class = "Answer">
+                    <p>Самыми известными объектами культурного наследия города Новосибирска являются:</p>
+                    <ul>
+                        <li>Театр оперы и балета (НОВАТ) - Красный проспект, 36</li>
+                        <li>Краеведческий музей - Красный проспект, 23</li>
+                        <li>Дом с часами - Красный проспект, 11</li>
+                        <li>Собор Александра Невского - Красный проспект, 1а</li>
+                        <li>Дом ученых - Академгородок, Морской проспект, 23</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "FAQItem">
+                <div class = "Question">
+                    <span class="FAQline"></span> 
+                    <p>Какие известные объекты культурного наследия расположены в Новосибирской области?</p>
+                </div>
+                <div class = "Answer">
+                    <p>Самыми известными объектами культурного наследия города Новосибирска являются:</p>
+                    <ul>
+                        <li>Водонапорные бышни - город Болотное, город Карасук, поселок Чик, город Бердск, город Барабинск, поселок Коченево, поселок Станционно-Ояшинский, поселок Чаны </li>
+                        <li>Станция насосная с двумя водонапорными башнями - город Купино, ул. Железнодорожная, 2</li>
+                        <li>Деревянная церковь св. Серафима - село Турнаево, ул. Хохловка, 3</li>
+                        <li>Бердский монумент (Памятный знак в честь подвига бердчан в годы Великой Отечественной войны) - город Бердск, Парк Победы</li>
+                        <li>Станция насосная - город Каргат, ул. Вокзальная, 37а</li>
+                        <li>Церковь каменная на Каракане - село Завьялово, ул. Совхозная, 47</li>
+                        <li>Краеведческий музей - город Куйбышев, ул. Коммунистическая, 29</li>
+                        <li>Лавка купчихи Смирновой - село Битки, ул. Ленин, 46</li>
+                        <li>Церковь (деревянная) - Барышевский сельсовет, в районе села Ложок</li>
+                    </ul>
+                </div>
+            </div>
+            <div class = "FAQItem">
+                <div class = "Question">
+                    <span class="FAQline"></span> 
+                    <p>Нужно ли присылать оригиналы работ для участия в конкурсе?</p>
+                </div>
+                <div class = "Answer">
+                    <p>Для участия в конкурсе не нужно присылать оригинал работы, достатачно заполнить электорнную анкету участника и прикрепить к ней фотографию или цифровую копию вашей работы.</p>
+                    <p>Организатор вправе запросить оригинал работы. Уведомление о предоставлении оригинала работы придет на указанную в анкете почту (законного представителя и/или учителя), также организаторы конкурса могут связаться с законным представителем по телефону. </p>
+                    <P>В случае необходимости оригинал работы необходимо прислать в офис ГАУ НСО НПЦ ( 630099, г. Новосибирск, ул. Советская, 33) в течение 2 месяцев с момента поступления запроса о предоставлении оригинала.</P>
+                    <p>Отсутствие оригинала конкурсной работы является причиной для отстранения участника конкурса и аннулирования результатов.</p>
+                </div>
+            </div>
+            <div class = "FAQItem">
+                <div class = "Question">
+                    <span class="FAQline"></span> 
+                    <p>Можно ли отправлять на участие в конкурсе работы, выполненные в графических редакторах (Photoshop, Clip studio paint, Krita и д.р.)?</p>
+                </div>
+                <div class = "Answer">
+                    <p>Нет. Работы, выполненные с использованием графических редакторов, не принемаются к рассмотрению в конкурсе.</p>             
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class = "EndSection"> 
+        <div class="ContactsContainer">
+            <img src="End.svg" class="EndBg">
+            <img src="EndMobile.svg" class="EndMobileBg">
+            <div class="Contacts">        
+                <img src="LogoNPC.svg" class="LogoNPC">
+                <div class = "ContactText">
+                    <h2>Контакты</h2>
+                    <p>630099</p>
+                    <p>г. Новосибирск, ул. Советская, 33 (ул. Ленина, 5)</p>
+                    <p>+7 (383) 223-55-12</p>
+                    <p>npcnskru@yandex.ru</p>
+                    <div class = "SocialNetworks">
+                        <a href="https://m.ok.ru/group/70000000445533" target="_blank">  
+                            <img src="odnoclassniki.svg" class="odnoclassniki">
+                        </a>
+                        <a href="https://vk.ru/gau_nso_npc" target="_blank">
+                            <img src="vk.svg" class="vk">
+                        </a>
+                        <a href="https://t.me/gau_nso_npc" target="_blank">
+                            <img src="tg.svg" class="tg">
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+    
+</html>
