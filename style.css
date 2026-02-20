@@ -29,6 +29,10 @@
 a {
     display: contents;
 }
+.OperaGreen, .Zdaniye4, .QuestionZnak
+{
+    position: absolute;  
+}
 * {
 
     box-sizing: border-box;
@@ -452,7 +456,6 @@ body
     {
         flex-shrink: 0;
         order: 2;
-        width: 30%;
     }
         .ZdaniyeContainer
     {
@@ -522,21 +525,7 @@ body
         margin-bottom: 10vw;
                 margin-left: 10vw;
     }
-    .Participatebtn
-    {
-        background-color: #D64D2E; 
-        color: white;
-        font-family: 'Roboto-Regular';
-        font-size: 20px;
-        padding: 5vw 5vw;
-        border: none;
-        border-radius: 10vw;  
-        cursor: pointer;
-        display: inline-block;
-        align-self: self-start;
-        margin-left: 10vw;
-        transform: rotate(-2deg);
-    }
+
     .CategoriesParticipantsList 
     {
         width: 100%;
@@ -733,6 +722,89 @@ body
         background-color: black;
         border-color: black;
     }
+    .MonumentZdaniya 
+    {
+        padding-bottom: 15vw;
+        margin-right: 0vw;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FindMonumentContent
+    {
+        
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10vw;
+    }
+    .MonumentBG
+    {
+        margin-right: 15vw;
+        position: relative;
+        width: 65vw;
+    }
+    .QuestionZnak
+    {
+        margin-left: 10vw;
+        margin-bottom: 5vw;
+        width: 40vw;
+    }
+    .OperaGreen
+    {
+        object-fit: fill;
+        margin-left: 25vw;
+        margin-top: 45vw;
+        width: 57vw;
+        height: 37vw;
+    }
+    .Zdaniye4
+    {
+        margin-right: 35vw;
+        width: 50vw;
+    }
+    .FindMonument
+    {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        width: 100%; 
+        align-items: stretch;
+        margin-top: 15vw;
+    }
+    .FindMonumentText
+    {
+        max-width: 70%;
+        text-align: left;
+        font: 7.273vw 'Andika-Bold';
+    }
+    .FindMonumentDescription
+    {
+        margin-top: 0;
+        max-width: 70%;
+        text-align: left;
+        font: 4.04vw 'Roboto-SemiBold';
+    }
+    .MapOKN
+    {
+        background-color: #D64D2E; 
+        color: white;
+        font-family: 'Roboto-SemiBold';
+        font-size: 4.04vw;
+        padding: 4vw 4vw;
+        border: none;
+        border-radius: 10vw; 
+        cursor: pointer;
+        display: inline-block;
+        align-self: self-start;
+        margin-left: 15vw;
+        
+        transform: rotate(-2deg);
+    }
 }
 @media (min-width: 769px) 
 {
@@ -748,7 +820,7 @@ body
     .ParticipateSection
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: row-reverse;
         max-width: none;
         width: 100%; 
         align-items: stretch;
@@ -1077,7 +1149,7 @@ body
         height: auto;
         position: absolute;  
         right: 8vw;    
-        bottom: -10vw; 
+        bottom: -3vw; 
         flex-shrink: 0;
     }
     .ParticipateNOVAT
@@ -1087,7 +1159,7 @@ body
         height: auto;
         position: absolute;  
         right: 20vw;    
-        bottom: -5vw; 
+        bottom: 0vw; 
         flex-shrink: 0;
     }
     .Participate100KV
@@ -1098,7 +1170,7 @@ body
         position: absolute;
         right: 13vw;
         bottom: auto;
-        top: 0vw;
+        top: 10vw;
         flex-shrink: 0;
     }
     .HowParticipate
@@ -1145,19 +1217,7 @@ body
         margin-top: 1.5vw;
     }
 
-    .Participatebtn:hover 
-    {
-        background-color: #b03d24; 
-        transform: rotate(0deg) scale(1.05);
-    }
-    .buildingsParticipate 
-    {
-        width: 100%;
-        position: relative;
-        bottom: -8vw;
-        z-index: 15;
-        align-items: flex-end;
-    }
+
     .ParticipantsContainer
     {
         display: flex;
@@ -1378,7 +1438,7 @@ body
         text-align: right;
         color: white;
         font-family: 'Roboto-Regular';
-        font-size: 20px;
+        font-size: 1.042vw;
     }
     .LogoNPC
     {
@@ -1396,5 +1456,93 @@ body
         flex-direction: column;
         align-items: flex-end;
         margin-left: 50vw;
+    }
+    .FindMonument
+    {
+        display: flex;
+        flex-direction: row;
+        max-width: none;
+        width: 100%; 
+        align-items: stretch;
+        margin-top: 20vw;
+    }
+    .MonumentZdaniya
+    {
+        z-index: 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .FindMonumentContent
+    {
+        margin-left: 20vw;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: self-start;
+        justify-content: center;
+
+    }
+
+    .MonumentBG
+    {
+        width: 35vw;
+        margin-left: 7vw;
+    }
+    .OperaGreen
+    {
+        width: 30vw;
+        margin-top: 12vw;
+        margin-left: 27vw;
+    }
+    .QuestionZnak
+    {
+        width: 22vw;
+        margin-left: 25vw;
+        margin-bottom: 3vw;
+    }
+    .Zdaniye4
+    {
+        width: 25vw;
+        margin-right: 4vw;
+    }
+    .FindMonumentDescription
+    {
+        text-align: left;
+        max-width: 60%;
+        margin-right: 10vw;
+        font-family: 'Roboto-Regular';
+        font-size: 1.042vw;
+    }
+    .MapOKN
+    {
+        background-color: #D64D2E; 
+        color: white;
+        font-family: 'Andika-Regular';
+        font-size: 1.042vw;
+        padding: 1vw 2vw;
+        border: none;
+        border-radius: 2vw; 
+        cursor: pointer;
+        display: inline-block;
+        transform: rotate(-2deg);
+        transition: transform 0.3s, background-color 0.3s;
+        align-self: self-end;
+        margin-right: 9vw;
+        margin-top: 1.5vw;
+    }
+
+    .MapOKN:hover 
+    {
+        background-color: #b03d24; 
+        transform: rotate(0deg) scale(1.05);
+    }
+    .FindMonumentText
+    {
+        
+        max-width: 30vw;
+        font: 1.875vw 'Andika-Bold';
     }
 }
