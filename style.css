@@ -1390,7 +1390,7 @@ body
         display: flex;
         align-items: center;
         justify-content: center;
-        margin-top: 20vw;
+        margin-top: 10vw;
     }
     .ContactsContainer 
     {
@@ -1544,5 +1544,50 @@ body
         
         max-width: 30vw;
         font: 1.875vw 'Andika-Bold';
+    }
+    .OurJuri
+    {
+        width: 100%;
+        text-align: center;
+        font: 1.875vw 'Andika-Bold';
+    }
+    .JuriSection
+    {
+        display: flex;
+        flex-direction: column;
+        max-width: none;
+        width: 100%; 
+        align-items: stretch;
+        margin-top: 20vw;
+    }
+    .Kartochka
+    {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .JuriList
+    {
+        gap: 0vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .JuriImg
+    {
+        align-self: center;
+    }
+    .JuriName
+    {
+        align-self: center;
+        font: 1.25vw 'Andika-Bold';
+    }
+    .JuriDescription
+    {
+        align-self: center;
+        text-align: left;
+        width: 60%;
+        font: 1.042vw 'Roboto-Regular';
     }
 }
