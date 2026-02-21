@@ -27,7 +27,7 @@
     font-style: normal;
 }
 a {
-    display: contents;
+    
 }
 .OperaGreen, .Zdaniye4, .QuestionZnak
 {
@@ -90,15 +90,16 @@ body
     }
     .menulogo1 
     {
-        max-width: 130px;
+        max-width: 31.553vw;
         height: auto;
     }
 
     .menulogo2 
     {
-        max-width: 100px;
+        max-width: 24.272vw;
         height: auto;
-        margin-left: 10px;      
+        margin-left: 2.427vw;      
+        margin-right: 5vw;
     }
     .logo
     {
@@ -203,12 +204,14 @@ body
     }
     .menu-links-wrapperMobile
     {
+        
         display: flex;
         flex-direction: column; 
-        align-items: flex-end; 
+        align-items: flex-end;
         width: 100%;
         margin-top: 2vw;
         box-sizing: border-box;
+        gap: 10vw;
     }
     .menu-links-wrapperMobile a 
     {
@@ -216,7 +219,7 @@ body
         width: fit-content;
         right: 0vw; 
         text-align: right; 
-        width: 180px;
+        width: 100%;
         font-size: 20px;
         font-family: 'Andika-Regular';
     }
@@ -239,11 +242,11 @@ body
 
     .logosstack 
     {
-                
+        width: 100%;
         background-color: #B0DDF1;
         display: flex;
         flex-direction: row;
-        gap: 30px;
+        gap: 7.282vw;
     }
     .logo1, .FirstPageDesk, .menulinkswrapperDesk
     {
@@ -327,10 +330,10 @@ body
         flex-direction: column;
         align-items: center;
         position: relative;
-        min-height: 100vh;
+        max-height: 300vw;
         width: 100%;
 
-        padding-top: 20vw;
+        padding-top: 10vw;
         box-sizing: border-box; 
         background-color: white;
     }
@@ -787,7 +790,7 @@ body
         margin-top: 0;
         max-width: 70%;
         text-align: left;
-        font: 4.04vw 'Roboto-SemiBold';
+        font: 4.04vw 'Roboto-Regular';
     }
     .MapOKN
     {
@@ -804,6 +807,50 @@ body
         margin-left: 15vw;
         
         transform: rotate(-2deg);
+    }
+    .aboutsection
+    {
+        margin-top: 25vw;
+    }
+        .Kartochka
+    {
+        flex: 1 1 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .JuriList
+    {
+        gap: 15vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .JuriImg
+    {
+
+        align-self: center;
+    }
+    .JuriName
+    {        
+        margin-top: 0vw;
+        text-align: center;
+        font: 5.825vw 'Andika-Bold';
+    }
+    .JuriDescription
+    {
+        
+        margin-top: 0vw;
+        align-self: center;
+        text-align: left;
+        width: 60%;
+        font: 4.854vw 'Roboto-Regular';
+    }
+    .OurJuri
+    {
+        width: 100%;
+        text-align: center;
+        font: 8.738vw 'Andika-Bold';
     }
 }
 @media (min-width: 769px) 
