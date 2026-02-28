@@ -4,19 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
     <header class="header">
         <div class="logogroup">
-            <img src="logo.svg" class="logo">
-            <img src="Center.svg" class="logo1">
+            <img src="img/logo.svg" class="logo">
+            <img src="img/Center.svg" class="logo1">
         </div>
+        
         <div class = "menulinkswrapperDesk">
-            <a href="Nomination.html">Номинации</a>
-            <a href="Gallery.html">Галерея</a>
-            <a href="Archive.html">Архив</a>
-            <a href="index.html">О конкурсе</a>
+            {% include "navigation.njk" %}
         </div>
         <div class="burger-btn" onclick="toggleMenu()">
             <span></span>
@@ -33,16 +31,13 @@
                 </div>
                 
                 <div class="logosstack">
-                    <img src="KraskiFull.svg" class="menulogo1">
-                    <img src="Center.svg" alt="Центр" class="menulogo2">
+                    <img src="img/KraskiFull.svg" class="menulogo1">
+                    <img src="img/Center.svg" alt="Центр" class="menulogo2">    
                 </div>
             </div>
             <hr class = "LineMobile">
             <div class="menu-links-wrapperMobile">
-                <a href="Nomination.html">Номинации</a>
-                <a href="Gallery.html">Галерея</a>
-                <a href="Archive.html">Архив</a>
-                <a href="index.html">О конкурсе</a>
+                {% include "navigation.njk" %}
             </div>
         </div>
     </nav>
@@ -50,41 +45,50 @@
         <h1 class="ConsursText">Конкурс детского рисунка<br>Новосибирской области</h1>
     
         <div class="decorLeft">
-            <img src="Palette.svg" class="Palette">
-            <img src="Brush.svg" class="Brush">
+            <img src="img/Palette.svg" class="Palette">
+            <img src="img/Brush.svg" class="Brush">
         </div>
         <div class="decorCenter">
-            <img src="Chalk.svg" class="Chalk">
-            <img src="Line.svg" class="Line">
+            <img src="img/Chalk.svg" class="Chalk">
+            <img src="img/Line.svg" class="Line">
         </div>
         <div class="decorRight">
-            <img src="Window.svg" class="Window">
-            <img src="Arka.svg" class="Arka">
+            <img src="img/Window.svg" class="Window">
+            <img src="img/Arka.svg" class="Arka">
         </div>
     
-        <button class="joinBtn" target="Anketa">Принять участие</button>
+        <div class = "uchastiyeContainer">     
+            <button class="joinBtn" target="Anketa">Принять участие</button>
+            <p class = "priem">Прием работ: с 02марта по 26 апреля 2026 года </p>
+        </div>
     </div>
 
     <div class = "FirstPageMobile">
-        <h1 class = "ConsursText">Конкурс детского рисунка Новосибирской области</h1>
-        <div class="decorLeft">
-            <img src="ChalkBold.svg" class="Chalk">
-            <img src="LineBold.svg" class="Line">
+        <div class = "ConcursContainer">     
+            <h1 class = "ConsursText">Конкурс детского рисунка Новосибирской области</h1>
+            <div class="decorLeft">
+                <img src="img/ChalkBold.svg" class="Chalk">
+                <img src="img/LineBold.svg" class="Line">
+            </div>
+            <div class="decorRight">
+                <img src="img/Window.svg" class="Window">
+                <img src="img/Arka.svg" class="Arka">
+            </div>
         </div>
-        <div class="decorRight">
-            <img src="Window.svg" class="Window">
-            <img src="Arka.svg" class="Arka">
+
+        <div class = "uchastiyeContainer">     
+            <button class="joinBtn" target="Anketa">Принять участие</button>
+            <p class = "priem">Прием работ: с 02марта по 26 апреля 2026 года </p>
         </div>
-        <button class="joinBtn" target="Anketa">Принять участие</button>
     </div>
     <section class="aboutsection">
         <div class="visualpart">
-            <img src="BackGround.svg" class="blue-shape" alt="Фон">
+            <img src="img/BackGround.svg" class="blue-shape" alt="Фон">
             <div class="buildings">             
-                <img src="Zdaniye2.svg" class="center">
-                <img src="Zdaniye.svg" class="opera">
-                <img src="Stars.svg" class="stars">
-                <img src="StarsMobile.svg" class="starsMobile">
+                <img src="img/Zdaniye2.svg" class="center">
+                <img src="img/Zdaniye.svg" class="opera">
+                <img src="img/Stars.svg" class="stars">
+                <img src="img/StarsMobile.svg" class="starsMobile">
             </div>
         </div>
         <div class="infopart">
@@ -98,11 +102,11 @@
         </div>
     </section>
     <section class="ParticipateSection">
-                    <div class="ZdaniyeContainer">
+            <div class="ZdaniyeContainer">
                 <div class="buildingsParticipate ">        
-                    <img src="NOVAT.svg" class="ParticipateNOVAT"> 
-                    <img src="Lenina11.svg" class="ParticipateLenina11">
-                    <img src="100KV.svg" class="Participate100KV">
+                    <img src="img/NOVAT.svg" class="ParticipateNOVAT"> 
+                    <img src="img/Lenina11.svg" class="ParticipateLenina11">
+                    <img src="img/100KV.svg" class="Participate100KV">
                 </div>
             </div>
             <div class="ParticipatepPart">
@@ -116,10 +120,10 @@
     </section>
     <section class="FindMonument">
         <div class = "MonumentZdaniya">
-            <img src = "MonumentBG.svg" class = "MonumentBG">
-            <img src = "Zdaniye4.svg" class = "Zdaniye4">
-            <img src = "Opera.svg" class = "OperaGreen">
-            <img src = "QuestionZnak.svg" class = "QuestionZnak">
+            <img src = "img/MonumentBG.svg" class = "MonumentBG">
+            <img src = "img/Zdaniye4.svg" class = "Zdaniye4">
+            <img src = "img/Opera.svg" class = "OperaGreen">
+            <img src = "img/QuestionZnak.svg" class = "QuestionZnak">
         </div>
         <div class = "FindMonumentContent">
             <h2 class = "FindMonumentText">Найди памятники Новосибирской области</h2>
@@ -134,13 +138,13 @@
             <h2 class="ParticipantsText">Номинации</h2>
         </div>
         <div class = "CategoriesParticipantsList">      
-            <img src="BlueCard.svg" class="BlueCard"> 
-            <img src="YellowCard.svg" class="YellowCard">
+            <img src="img/BlueCard.svg" class="BlueCard"> 
+            <img src="img/YellowCard.svg" class="YellowCard">
         </div>
         <div class = "other">
-            <img src="OrangeLine.svg" class="OrangeLine">
-            <img src="MelokOrangeк.svg" class="MelokOrange"> 
-            <img src="MelokBlue.svg" class="MelokBlue">
+            <img src="img/OrangeLine.svg" class="OrangeLine">
+            <img src="img/MelokOrangeк.svg" class="MelokOrange"> 
+            <img src="img/MelokBlue.svg" class="MelokBlue">
             <a href = "https://forms.yandex.ru/u/698c1906e010db0e2690aaf7" target="_blank">
                 <button class="FillAnketa" id="Anketa">Заполнить Анкету</button>
             </a>
@@ -150,17 +154,17 @@
         <h2 class = "OurJuri">Наше жюри</h2>
         <div class = "JuriList">
             <div class = "Kartochka">
-                <img class = "JuriImg" src = "Jury1.svg">
+                <img class = "JuriImg" src = "img/Jury1.svg">
                 <p class = "JuriName">Авдеев Владимир Александрович</p>
                 <p class = "JuriDescription">Художник театра, член Союза художников России с 1991 г., эксперт, аттестованный Министерством культуры РФ, по проведению государственной историко-культурной экспертизы</p>
             </div>
             <div class = "Kartochka">
-                <img class = "JuriImg" src = "Jury2.svg">
+                <img class = "JuriImg" src = "img/Jury2.svg">
                 <p class = "JuriName">Кошелев Александр Владимирович</p>
                 <p class = "JuriDescription">Начальник управления по охране объектов культурного наследия Новосибирской области с 2008 по 2019 гг., эксперт, аттестованный Министерством культуры РФ, по проведению государственной историко-культурной экспертизы</p>
             </div>
             <div class = "Kartochka">
-                <img class = "JuriImg" src = "Jury3.svg">
+                <img class = "JuriImg" src = "img/Jury3.svg">
                 <p class = "JuriName">Рагино Георгий Янович</p>
                 <p class = "JuriDescription">архитектор-реставратор, член Союза архитекторов России, ведущий специалист Архитектурной мастерской Тоскина</p>
             </div>
@@ -239,10 +243,10 @@
     </section>
     <footer class = "EndSection"> 
         <div class="ContactsContainer">
-            <img src="End.svg" class="EndBg">
-            <img src="EndMobile.svg" class="EndMobileBg">
+            <img src="img/End.svg" class="EndBg">
+            <img src="img/EndMobile.svg" class="EndMobileBg">
             <div class="Contacts">        
-                <img src="LogoNPC.svg" class="LogoNPC">
+                <img src="img/LogoNPC.svg" class="LogoNPC">
                 <div class = "ContactText">
                     <h2>Контакты</h2>
                     <p>630099</p>
@@ -251,13 +255,13 @@
                     <p>npcnskru@yandex.ru</p>
                     <div class = "SocialNetworks">
                         <a href="https://m.ok.ru/group/70000000445533" target="_blank">  
-                            <img src="odnoclassniki.svg" class="odnoclassniki">
+                            <img src="img/odnoclassniki.svg" class="odnoclassniki">
                         </a>
                         <a href="https://vk.ru/gau_nso_npc" target="_blank">
-                            <img src="vk.svg" class="vk">
+                            <img src="img/vk.svg" class="vk">
                         </a>
                         <a href="https://t.me/gau_nso_npc" target="_blank">
-                            <img src="tg.svg" class="tg">
+                            <img src="img/tg.svg" class="tg">
                         </a>
                         
                     </div>
@@ -265,7 +269,7 @@
             </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
     
 </html>
