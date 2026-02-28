@@ -827,11 +827,14 @@ body
     }
     .JuriImg
     {
-
+        max-width: 100%;
+        margin-left: 15vw;
         align-self: center;
     }
     .JuriName
     {        
+        max-width: 80%;
+        margin-left: 15vw;
         margin-top: 0vw;
         text-align: center;
         font: 5.825vw 'Andika-Bold';
@@ -839,6 +842,7 @@ body
     .JuriDescription
     {
         
+        margin-left: 15vw;
         margin-top: 0vw;
         align-self: center;
         text-align: left;
