@@ -1,0 +1,51 @@
+
+
+@media (max-width: 769px) 
+{
+        .SectionWinner
+    {
+        margin-bottom: 20vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .WinnerText
+    {
+        text-align: center;
+        font-size: 12.121vw;
+        font-family: 'Andika-Bold';
+    }
+    .WinnerDescription
+    {
+        padding: 0 5vw;
+        text-align: center;
+        font-size: 6.734vw;
+        font-family: 'Roboto-Regular';
+    }
+}
+@media (min-width: 769px) 
+{
+    .SectionWinner
+    {
+        margin-bottom: 20vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .WinnerText
+    {
+        text-align: center;
+        font-size: 5.185vw;
+        font-family: 'Andika-Bold';
+    }
+    .WinnerDescription
+    {
+        text-align: center;
+        font-size: 1.6vw;
+        font-family: 'Roboto-Regular';
+    }
+}

@@ -26,15 +26,12 @@
     font-weight: normal;
     font-style: normal;
 }
-a {
-    
-}
+
 .OperaGreen, .Zdaniye4, .QuestionZnak
 {
     position: absolute;  
 }
 * {
-    
     box-sizing: border-box;
 }
 html, body 
@@ -50,11 +47,7 @@ body
     min-height: 100%;
 }
 
-.EndSection
-{        
-    margin-top: auto;
-    width: 100%;
-}
+
 .EndBg 
 {
     width: 100%;
@@ -70,9 +63,14 @@ body
 
 @media (max-width: 769px) 
 {
+    .EndSection
+    {        
+        margin-top: auto;
+        width: 100%;
+    }
     .joinBtn
     {
-        align-items: center;
+        align-self: center;
         background-color: #D64D2E; 
         color: white;
         font-family: 'Roboto-SemiBold', sans-serif;
@@ -84,7 +82,7 @@ body
         margin-top: 37vw;
         transform: rotate(-2deg);
     }
-    .stars, .MelokOrange, .MelokBlue, .EndBg
+    .stars, .MelokOrange, .MelokBlue, .EndBg, .decorLeft
     {
         display: none;
     }
@@ -113,6 +111,8 @@ body
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
+        
+        
     }
     .menu-top-row 
     {
@@ -237,7 +237,7 @@ body
     {
         display: flex;
         align-items: flex-start;
-        gap: 15px;  
+        gap: 0vw;  
     }
 
     .logosstack 
@@ -246,23 +246,38 @@ body
         background-color: #B0DDF1;
         display: flex;
         flex-direction: row;
-        gap: 7.282vw;
+        gap: 7vw;
     }
-    .logo1, .FirstPageDesk, .menulinkswrapperDesk
+    .logo1, .menulinkswrapperDesk, .decorCenter
     {
         display: none;
     }
     .ConsursText
     {
         z-index: 1;
-        font: 36px 'Andika-Bold';
+        font: 10vw 'Andika-Bold';
+        margin-top: 0vw;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
-        width: clamp(300px, 80%, 600px);
         max-width: 100%;
     }
-    .decorLeft 
+    .uchastiyeContainer
+    {
+        display: flex;
+        flex-direction: column;
+        margin-top: 45vw;
+    }
+    .priem
+    {
+        max-width: 70%;
+        text-align: center;
+        align-self: center;
+        color: #7C7C7C;
+        font-size: 5.051vw;
+        font-family: 'Roboto-Regular';
+    }
+    .decorCenterMobile
     {
         z-index: 0;
         top: 63vw;
@@ -273,44 +288,44 @@ body
     .decorRight
     {
         z-index: 0;
-        top: 63vw;
+        top: 67vw;
         position: absolute;
         right: 6vw;  
         bottom: 10%;
     }
     .Window
     {
-        top: 18vw;
-        right: -4vw;
-        width: 23vw;
-        height: 23vw;
+        width: 27vw;
+        top: 25vw;
+        right: -6vw;
         display: block;
         position: absolute;
     }   
 
     .Arka 
     {
-        width: 28vw;
-        height: 28vw;
+        top: -7vw;
+        right: -6vw;
+        width: 45vw;
+        position: absolute;
         display: block;
     }  
     .Line
     {
-        top: 20vw;
-        width: 20vw;
-        height: auto;
-        left: 1vw;
+        width: 30vw;
+        top: 18vw;
+        left: 3vw;
         position: absolute;
     } 
 
     .Chalk
     {        
-        width: 35vw;
+        width: 50vw;
         height: auto;
-        left: -2vw;
+        left: 0vw;
         top: 25vw;
         position: absolute;
-
+        
     }
     
 
@@ -325,10 +340,8 @@ body
     {
         text-align: center;
     }
-    .FirstPageMobile 
+    .FirstPageDesk
     {
-        
-
         display: flex;       
         flex-direction: column;
         align-items: center;
@@ -356,7 +369,7 @@ body
     {
         overflow: hidden;
         position: relative;
-        width: 100vw;
+        width: 100%;
         display: block;
         line-height: 0;
     }
@@ -371,6 +384,7 @@ body
     }
     .blue-shape 
     {
+
         width: 110%;
         height: auto;
         display: block;
@@ -472,7 +486,7 @@ body
 
         margin-top: 25vw;
         position: relative;
-        width: 100vw;
+        width: 100%;
         height: 50vw;
         display: block;
         line-height: 0;
@@ -819,6 +833,7 @@ body
     }
     .aboutsection
     {
+        
         margin-top: 25vw;
     }
         .Kartochka
@@ -830,11 +845,11 @@ body
     }
     .JuriList
     {
+        align-items: stretch;
         gap: 15vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        align-items: center;
     }
     .JuriImg
     {
@@ -862,10 +877,16 @@ body
     }
     .OurJuri
     {
-        margin-left: 1vw;
         width: 100%;
         text-align: center;
         font: 8.738vw 'Andika-Bold';
+    }
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
     }
 }
 @media (min-width: 769px) 
@@ -918,7 +939,7 @@ body
         right: auto;
         left: 40%; 
     }
-    .burger-btn, .mobilenav, .FirstPageMobile, .menulinkswrapperMobile, .starsMobile, .EndMobileBg
+    .burger-btn, .mobilenav, .FirstPageMobile, .menulinkswrapperMobile, .starsMobile, .EndMobileBg, .decorCenterMobile
     {
         display: none;
     }
@@ -1064,6 +1085,8 @@ body
     }
     .joinBtn
     {
+        max-width: 70%;
+        align-self: center;
         background-color: #D64D2E; 
         color: white;
         font-family: 'Roboto-SemiBold', sans-serif;
@@ -1629,17 +1652,17 @@ body
     }
     .Kartochka
     {
-        flex: 1 1 0;
+        flex: 1;
         display: flex;
         flex-direction: column;
+        align-items: stretch;
     }
     .JuriList
     {
-        gap: 0vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        align-items: center;
+        align-items: stretch;
     }
     .JuriImg
     {
@@ -1656,5 +1679,27 @@ body
         text-align: left;
         width: 60%;
         font: 1.042vw 'Roboto-Regular';
+        flex-grow: 1;
+    }
+    .priem
+    {
+        max-width: 70%;
+        text-align: center;
+        align-self: center;
+        color: #7C7C7C;
+        font-size: 1.389vw;
+        font-family: 'Roboto-Regular';
+    }
+    .uchastiyeContainer
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    body 
+    {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
     }
 }
