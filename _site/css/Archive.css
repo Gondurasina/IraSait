@@ -32,10 +32,10 @@
         background-color: #D64D2E; 
         color: white;
         font-family: 'Roboto-Regular';
-        font-size: 6.734vw;
-        padding: 5vw 3vw;
+        font-size: 5.5vw;
+        padding: 5vw 5vw;
         border: none;
-        border-radius: 5vw; 
+        border-radius: 15vw; 
         cursor: pointer;
         display: inline-block;
     }
