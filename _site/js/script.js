@@ -62,6 +62,7 @@ navButtons.forEach(button => {
 const allCards = document.querySelectorAll('.Kartochka');
 
 allCards.forEach(card => {
+    const closeIcon = card.querySelector('.Krestik');
     const openBtn = card.querySelector('.Zaglushka'); 
     const overlay = card.querySelector('.modal-overlay');
     const closeBtn = card.querySelector('.modal-close');
@@ -77,7 +78,11 @@ allCards.forEach(card => {
                 overlay.classList.remove('active');
             });
         }
-
+        if (closeIcon) {
+            closeIcon.addEventListener('click', () => {
+                overlay.classList.remove('active');
+            });
+        }
         if (innerCloseBtn) {
             innerCloseBtn.addEventListener('click', () => {
                 overlay.classList.remove('active');
