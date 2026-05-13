@@ -1,8 +1,9 @@
 
 
+
 @media (max-width: 769px) 
 {
-        .SectionWinner
+    .SectionWinner
     {
         margin-bottom: 20vw;
         width: 100%;
@@ -29,7 +30,6 @@
 {
     .SectionWinner
     {
-        margin-bottom: 20vw;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -39,13 +39,169 @@
     .WinnerText
     {
         text-align: center;
-        font-size: 5.185vw;
+        font-size: 4.5vw;
         font-family: 'Andika-Bold';
+        margin-bottom: 2vw;
     }
     .WinnerDescription
     {
         text-align: center;
-        font-size: 1.6vw;
+        font-size: 1.2vw;
         font-family: 'Roboto-Regular';
+    }
+    .Winners
+    {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .CategoryName
+    {
+        text-align: left;
+        font-size: 1.88vw;
+        font-family: 'Andika-Bold';
+    }
+    .KartochkaContainer
+    {
+        display: flex;
+        flex-direction: row;
+    }
+    .KartochkaBG
+    {
+        display: inline-block; 
+        width: fit-content;
+        background-color: white;
+        filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.3));
+        padding: 2vw;
+    }
+    .Kartochka
+    {
+        flex: 0 0 auto;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .Zaglushka
+    {
+        display: block;
+        width: 20vw; 
+        height: auto;
+        max-width: 100%;
+    }
+    .Nomination{
+        text-align: left;
+        font-size: 1.88vw;
+        font-family: 'Andika-Bold';
+    }
+    .PrizePlace
+    {
+        max-width: 22vw; 
+        max-height: 22vw;
+        text-align: center;
+        font-size: 1.88vw;
+        font-family: 'Andika-Bold';
+    }
+    .modal-window 
+    {
+        background: white;
+        width: fit-content; 
+        height: fit-content;
+        max-width: 90vw;
+        max-height: 90vw;
+        box-shadow: 0 20px 35px rgba(0, 0, 0, 0.3);
+
+        position: relative;
+        transform: scale(0.95);
+        transition: transform 0.2s ease;
+    }
+    .modal-overlay.active .modal-window 
+    {
+        transform: scale(1);
+    }
+    .modal-overlay.active 
+    {
+        visibility: visible;
+        opacity: 1;
+    }
+    .modal-overlay 
+    {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.85); 
+        backdrop-filter: blur(2px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1000;
+        visibility: hidden; 
+        opacity: 0;
+        transition: visibility 0s, opacity 0.2s ease;
+    }
+    .ImageContainer
+    {
+        padding: 1vw;
+        width: 70%;
+        display: flex;
+        align-items: center; 
+        justify-content: center;
+        box-sizing: border-box;
+        
+    }
+    .ImgWinner
+    {
+        object-fit: contain;
+        width: 100%;
+        height: auto;
+    }
+    .ImageTextContainer
+    {
+        
+        padding: 1vw;
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .modal-content
+    {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+    }
+    .ImageTextContainer p
+    {
+        margin-top: 0;
+        text-align: center;
+    }
+    .NameImage
+    {
+         text-align: center;
+        font-size: 1.75vw;
+        font-family: 'Andika-Bold';
+    }
+    .WinnerName
+    {
+        margin-bottom: 0;
+    }
+    .AgeWinner, .School, .Teacher, .WinnerName
+    {
+        font-size: 1.3vw;
+        font-family: 'Roboto-Regular';
+    }
+    .School, .Teacher
+    {
+        color: #034E96;
+    }
+    .School
+    {
+        margin-bottom: 2vw;
     }
 }

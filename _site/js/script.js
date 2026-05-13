@@ -59,4 +59,45 @@ navButtons.forEach(button => {
 });
 
 
+const allCards = document.querySelectorAll('.Kartochka');
 
+allCards.forEach(card => {
+    const openBtn = card.querySelector('.Zaglushka'); 
+    const overlay = card.querySelector('.modal-overlay');
+    const closeBtn = card.querySelector('.modal-close');
+    const innerCloseBtn = card.querySelector('.js-close-modal');
+
+    if (openBtn && overlay) {
+        openBtn.addEventListener('click', () => {
+            overlay.classList.add('active');
+        });
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', () => {
+                overlay.classList.remove('active');
+            });
+        }
+
+        if (innerCloseBtn) {
+            innerCloseBtn.addEventListener('click', () => {
+                overlay.classList.remove('active');
+            });
+        }
+
+        overlay.addEventListener('click', (e) => {
+            if (e.target === overlay) {
+                overlay.classList.remove('active');
+            }
+        });
+    }
+});
+document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' || event.keyCode === 27) 
+        {
+        const activeModals = document.querySelectorAll('.modal-overlay.active');
+        
+        activeModals.forEach(modal => {
+            modal.classList.remove('active');
+        });
+    }
+});
